@@ -13,6 +13,11 @@ const weatherLocations = [
 ];
 
 function fetchWeatherUpdates() { 
+    /* Resetting the weather containing to be empty.
+    * This is very usable for the 20 seconds interval, where the information gets updated
+    * and not stacked on eachother :)
+    */ 
+    weatherContainer.innerHTML = '';
     // Fetch weather data for all locations in the weatherLocation array
     weatherLocations.forEach(location => {
         const apiURL = `https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}&current_weather=true`;
@@ -66,8 +71,8 @@ function fetchWeatherUpdates() {
         });
     });
 }
-// Setting an interval to check every 5 minutes for updated weather data.
-setInterval(fetchWeatherUpdates, 5 * 60 * 1000); 
+// Setting an interval to check every 20 seconds for updated weather data.
+setInterval(fetchWeatherUpdates, 30 * 1000); 
 
 // Calling the function
 fetchWeatherUpdates();
