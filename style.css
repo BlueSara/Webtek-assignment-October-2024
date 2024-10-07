@@ -1,0 +1,260 @@
+/* Styling for index and the other 2 pages */
+
+/* Adding the required fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(./Fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+/*Removes marings on every page*/
+body {
+    margin: 0;             
+}
+
+/* Standard font on every page */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header  {                         
+    background-color: #1f2936; 
+    color: white;
+    text-align: center;         /* Center all the text-content in the center of the page*/
+    padding: 20px 0;            /* Giving some padding top and bottom*/
+    border-bottom: solid grey 1px;  /* Adding a light grey border to resemble page of the assignment*/
+    display: flex;
+    flex-direction: column;     /* Making the header list align next to eachother to center */
+    gap: 10px;                  /* Adding a gap between the text on every side*/
+    font-size: large;           
+}
+
+/* Styling the header title font */
+.header-title {
+    font-family: 'Roboto-bold';
+    font-weight: bold;
+    font-size: large;
+}
+
+.header-url {
+    color: white;
+    text-decoration: none;      /* Removing the under-line on the text in header */
+}
+
+.header-list-item {
+    display: inline-block;      /* Removing bullet point and aligning header list next to eachother*/
+    padding-right: 20px;
+}
+
+.header-url:hover {
+    color: #da26b6f9;;      /* Adding small visual effect of color-changing when hovering over the links*/
+}
+
+.hello {
+    flex-wrap: wrap;
+    height: 50% 40%;
+    padding: 4% 3%;                 /* Padding between the hello-div and the content*/
+    justify-content: space-evenly;  
+    align-items: center;            /* Aligning the items in the div in center */
+    display: flex;                  /* Content is flexed, displayed nexrt to eachother*/
+    background-color: #1f2936;
+    color: white;
+
+}
+/* Styling the hello title font */
+.hello-title {
+    font-size: 250%;
+    margin: 0;
+    font-family: 'Roboto-bold';
+}
+
+.hello-text {
+    font-size: 100%;
+}
+
+.hello-box {
+    flex-direction: column;
+    width: 25%;
+    box-sizing: border-box;       
+    min-height: auto;          /* Min-height to prevent overflow when the window get smaller */
+}                              
+
+/* Styling the first button */
+.hello-button {
+    color: white;
+    font-family: 'Roboto-bold';
+    font-size:medium;
+    padding: 1.5%;
+    width: 30%;
+    background-color: #3782f5;
+    border-radius: 10px;
+    border: solid 1px #3782f5 ;
+    font-weight: 600;
+    cursor: pointer;            /* Adding hover effect: mousepointer*/
+    min-width: 73px;            /* Min-width to prevent owerflow when the window gets smaller*/
+}
+
+.hello-button:hover {
+    background-color: #2862c2; /* Adding visual effect of colorchange when hovering*/
+}
+
+.hello-img {
+    width: 38%;
+    height: 270px;
+    position: relative;  
+}
+
+.article-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 5% 20%;
+    grid-gap: 10% 0%;
+}
+/* All the div's in the article-area will have this margin */
+.article-area > div {
+    margin: 2% 1%;
+}
+
+
+/* Styling title font and placement */
+.body-title {
+    text-align: center;
+    font-size:2.5rem;
+    font-weight: bold;
+    padding: 0% 5%;         /* Adding padding to prevent overlap*/
+    padding-bottom: 2%;
+    font-family: 'Roboto-bold';
+}
+
+/* Styling text placement */
+.article-text {
+    flex: 0 0 40%;
+    text-align: justify;
+    line-height: 25px;      /* Adding line spacing*/
+}
+
+/* Styling the box/div design and placement */
+.blue-box {
+    border: 5px #3782f5 solid;
+    flex: 0 0 35%;
+    width: 10%;
+    padding: 9% 0%;
+    border-radius: 10px;        /* Rounding out the corners */
+}
+
+/* Styling the box/div design and placement */
+.container {
+    background-color: #e4e5eb;
+    padding: 10% 30%;       /* Adding ton of padding to center the text in the middle*/
+    margin: auto;
+    font-size: x-large;
+    text-shadow: -5px 5px 5px grey; /* Shadow on the text*/
+    border:solid 1px;
+    border-color: #e4e5ebce;
+}
+
+/* Styling the signature design and placement */
+.signature {
+    font-weight: bold;
+    text-shadow: none;
+    text-align: right;
+    font-family: 'Roboto-bold';
+}
+/* Styling new div with second button */
+.signin-container {
+    background-color: #3782f5;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    margin: 10% 10%;    /* Making the div smaller*/
+    padding: 2% 15%;    /* Content is in a smaller section in the div */
+    border:solid #3783f52a;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+/* Styling second button and placement */
+.signin-button {
+    border: solid;
+    border-color: white solid;
+    flex-direction: row;
+    margin-right: 0%;
+    padding: 0.7% 1%;
+    color: white;
+    font-family: 'Roboto-bold';
+    font-size: medium;
+    width: 15%;
+    background-color: #3782f5;
+    border-radius: 10px;    /* Rounding the corners of the button */
+    font-weight: 600;
+    cursor: pointer;        /* Adding hover effect: mousepointer*/
+    min-width: 73px;        /* Min-width to prevent owerflow when the window gets smaller*/
+}
+
+.signin-button:hover {
+    background-color: #2862c2;  /* Adding visual effect of colorchange when hovering*/
+}
+
+.footer{
+    color: white;
+    background-color: #1f2936;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;        /* Center the content */
+}
+
+.footer-title {
+    padding: 25px;
+    width: 100%;
+}
+
+/* Styling for site2.html */
+.main-container{
+    display: flex;      /* Content is flexed (Able to be next to eachother)*/
+    flex-wrap: wrap;    /* Content go downwards*/
+    gap: 20px;          /* Gap between each content/ box*/
+    margin: 2% 5%;      /* Margin for the page and posts*/
+}
+
+.article-box {
+    flex: 1 0 30%;          /* Making each post be ~1/3 of the page*/
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);  /* Shadowing for the boxes*/
+    padding: 1%;
+
+}
+
+/* Styling for site3.html*/
+/* Styling the table itself relative to the page*/
+.weather-table {
+    width: 60%;             /* Set width for the table*/
+    margin: 5% auto 10%; 
+    border-collapse: collapse; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for table*/
+    background-color: #f9f9f9;               
+}
+
+/* Styling the first row in the table / th */
+.weather-table thead {      
+    background-color: #1f2936; 
+    color: white; 
+}
+/* Styling rest of the table*/
+.weather-table th, .weather-table td {
+    padding: 12px 15px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd;
+    border-left: solid 1px #ddd;
+}
+
+.weather-table tbody tr:hover {     /* Visual effect when hovering over a row: colorchange*/
+    background-color: #ddd; 
+}
